@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "./dist",
     "sourceMap": true,
-    "module": "esnext", // normally it would be es6, but because of dynamic import it need to be newer
+    "module": "esnext", // normally it would be es6, but because of using dynamic imports, the module version needs to be newer
     "removeComments": false, // we need to keep "magic comments" to have dynamic imports working
     "target": "es5",
     "allowJs": true,

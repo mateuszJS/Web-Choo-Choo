@@ -9,8 +9,8 @@ module.exports = {
     extensions: [".ts", ".js"],
     modules: [path.resolve(__dirname, "src"), "node_modules"],
     /* useful with absolute imports, "src" dir now takes precedence over "node_modules",
-    otherwise you got an error:
-    Requests that start with a name are treated as module requests and resolve within module directories (node_modules).*/
+    otherwise you got an error when importing a file with absolute path.
+    Is then treated as module requests from node_modules instead of your project files*/
   },
   module: {
     rules: [
